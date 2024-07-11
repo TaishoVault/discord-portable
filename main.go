@@ -57,7 +57,7 @@ func main() {
 		defer func() {
 			regKey := registry.Key{
 				Key:  `HKCU\SOFTWARE\Discord`,
-				Arch: "32",
+				Arch: "64",
 			}
 			if regKey.Exists() {
 				if err := regKey.Delete(true); err != nil {
